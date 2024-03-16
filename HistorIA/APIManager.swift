@@ -4,21 +4,20 @@
 //
 //  Created by Alumno on 15/03/24.
 //
-
-import Foundation
-
 // APIManager.swift
 import Foundation
 
 class APIManager {
     static let shared = APIManager()
     
-    func fetchData(completion: @escaping (ApiResponse?) -> Void) {
-        guard let url = URL(string: "https://historia-api.fly.dev/search?query=La_segunda_guerra_mundial") else {
-            completion(nil)
-            return
-        }
-        
+    func fetchData(query: String, completion: @escaping (ApiResponse?) -> Void) {
+            guard let encodedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+                  let url = URL(string: "https://historia-api.fly.dev/search?query=\(encodedQuery)") else {
+                completion(nil)
+                return
+            }
+    
+
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else {
                 print("No se recibieron datos.")
@@ -33,6 +32,7 @@ class APIManager {
             } else {
                 print("No se pudieron convertir los datos a cadena.")
             }
+            
             
             do {
                 let decodedData = try JSONDecoder().decode(ApiResponse.self, from: data)

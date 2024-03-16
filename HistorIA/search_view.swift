@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct search_view: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    
+    @State private var searchText: String = ""
+      @State private var searchResults: [String] = []
+      @State private var navigateToTopicView: Bool = false
 
-#Preview {
-    search_view()
-}
+      var body: some View {
+          NavigationView {
+              VStack {
+                    TextField("Buscar", text: $searchText)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding()
+                    
+                  NavigationLink("Ir a Topic", destination: TopicView(query: searchText))
+
+                }
+          }
+      }
+  }

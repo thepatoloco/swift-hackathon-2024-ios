@@ -4,9 +4,6 @@
 //
 //  Created by Alumno on 15/03/24.
 //
-
-import Foundation
-
 // DataStructures.swift
 import Foundation
 
@@ -14,7 +11,6 @@ struct ApiResponse: Decodable {
     var title: String
     var topics: [Topic]
     var questions: [Question]
-    var error: Bool
 }
 
 struct Topic: Decodable, Hashable{
@@ -31,6 +27,9 @@ struct Question: Decodable, Hashable{
     var clue: String
     
 }
+
+
+
 
 enum QuestionType: String, Decodable {
     case winnerSelection = "winner_selection"

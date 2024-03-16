@@ -14,6 +14,8 @@
 		A62182182BA4FBB10034BA92 /* HistorIATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62182172BA4FBB10034BA92 /* HistorIATests.swift */; };
 		A62182222BA4FBB10034BA92 /* HistorIAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62182212BA4FBB10034BA92 /* HistorIAUITests.swift */; };
 		A62182242BA4FBB10034BA92 /* HistorIAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62182232BA4FBB10034BA92 /* HistorIAUITestsLaunchTests.swift */; };
+		FB8C36622BA7B3020088410A /* search_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C36612BA7B3010088410A /* search_view.swift */; };
+		FB8C36642BA987E80088410A /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C36632BA987E80088410A /* TopicView.swift */; };
 		FBCCF0812BA569940069241D /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCF0802BA569940069241D /* DataStructures.swift */; };
 		FBCCF0832BA569C40069241D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCF0822BA569C40069241D /* APIManager.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		A621821D2BA4FBB10034BA92 /* HistorIAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HistorIAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62182212BA4FBB10034BA92 /* HistorIAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorIAUITests.swift; sourceTree = "<group>"; };
 		A62182232BA4FBB10034BA92 /* HistorIAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorIAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB8C36612BA7B3010088410A /* search_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = search_view.swift; sourceTree = "<group>"; };
+		FB8C36632BA987E80088410A /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
 		FBCCF0802BA569940069241D /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
 		FBCCF0822BA569C40069241D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +108,8 @@
 				FBCCF0822BA569C40069241D /* APIManager.swift */,
 				A621820A2BA4FBB10034BA92 /* Assets.xcassets */,
 				A621820C2BA4FBB10034BA92 /* Preview Content */,
+				FB8C36612BA7B3010088410A /* search_view.swift */,
+				FB8C36632BA987E80088410A /* TopicView.swift */,
 			);
 			path = HistorIA;
 			sourceTree = "<group>";
@@ -263,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8C36622BA7B3020088410A /* search_view.swift in Sources */,
 				FBCCF0832BA569C40069241D /* APIManager.swift in Sources */,
+				FB8C36642BA987E80088410A /* TopicView.swift in Sources */,
 				FBCCF0812BA569940069241D /* DataStructures.swift in Sources */,
 				A62182092BA4FBB00034BA92 /* ContentView.swift in Sources */,
 				A62182072BA4FBB00034BA92 /* HistorIAApp.swift in Sources */,
